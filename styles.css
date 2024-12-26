@@ -121,3 +121,50 @@ section {
 .snowflake:nth-child(even) {
     animation-duration: 8s;
 }
+
+#game{
+    display:none;
+}
+.game-container {
+    display: grid;
+    grid-template-columns: repeat(5, 150px);
+    gap: 10px;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.card {
+    width: 150px;
+    height: 150px;
+    background-color: #b0e0e6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    display: none;
+}
+
+.card.flipped img {
+    display: block;
+}
+
+.card.matched {
+    background-color: #98fb98;
+    pointer-events: none;
+}
+
+.card.unflipped {
+    background-color: #b0e0e6;
+}
+
+.card:hover {
+    background-color: #e0ffff;
+}
