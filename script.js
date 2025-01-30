@@ -13,6 +13,7 @@ function showSlides() {
     setTimeout(showSlides, 5000); 
 }
 
+//show images
 showSlides();
 
 window.onload = function() {
